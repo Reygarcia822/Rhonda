@@ -1,0 +1,52 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:  rgb(102, 51, 153);
+    
+}
+
+h1
+{
+
+    color: red;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+.contenedor
+{
+   margin: 18rem 29rem;
+   display: table;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgba(171, 183, 183, 1) ;
+   border-radius: 10px;
+   border: solid;
+   width: 30%;
+
+}
+
+h1 span
+{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background:  rgba(171, 183, 183, 1) ;
+    border-left:  solid #000000;
+
+    animation: maquina 5s infinite alternate steps(12);
+}
+
+@keyframes maquina
+{
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    } 
+}
